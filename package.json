@@ -1,0 +1,63 @@
+{
+    "name": "vmetrics-js",
+    "version": "0.0.1",
+    "description": "High-performance TypeScript client for VictoriaMetrics with automatic batching and buffering",
+    "type": "module",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zimmerling/vmetrics-js"
+    },
+    "bugs": {
+        "url": "https://github.com/zimmerling/vmetrics-js/issues"
+    },
+    "scripts": {
+        "test": "vitest",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "nodemon src/index.ts",
+        "lint": "eslint .",
+        "format": "prettier . --write",
+        "example": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm/transpile-only\", pathToFileURL(\"./\"));' example/simple-example.ts"
+    },
+    "keywords": [
+        "victoriametrics",
+        "vm",
+        "time-series",
+        "metrics",
+        "monitoring",
+        "telemetry",
+        "influxdb",
+        "line-protocol",
+        "iot",
+        "timeseries",
+        "tsdb",
+        "observability",
+        "prometheus"
+    ],
+    "author": "zimmerling <ri.zimmermann@gmx.net>",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "@eslint/js": "^9.39.1",
+        "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+        "@types/node": "^24.10.0",
+        "eslint": "^9.39.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-jsdoc": "^61.1.12",
+        "eslint-plugin-max-params-no-constructor": "^0.0.4",
+        "eslint-plugin-tsdoc": "^0.4.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.6.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.46.3",
+        "vitest": "^4.0.7"
+    },
+    "dependencies": {
+        "async-mutex": "^0.5.0"
+    }
+}

@@ -1,0 +1,24 @@
+# Source files
+src/
+*.spec.ts
+*.test.ts
+
+# Config files
+tsconfig.json
+eslint.config.mjs
+prettier.config.mjs
+.editorconfig
+
+# Example and docs (keep README)
+example/
+CONTRIBUTING.md
+
+# Development
+.git/
+.github/
+.jj/
+node_modules/
+*.log
+
+# Build artifacts
+*.tsbuildinfo
