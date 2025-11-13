@@ -11,7 +11,14 @@ prettier.config.mjs
 
 # Example and docs (keep README)
 example/
+dist/example/
 CONTRIBUTING.md
+
+# Test files in dist (compiled)
+dist/**/*.spec.js
+dist/**/*.spec.d.ts
+dist/**/*.spec.js.map
+dist/**/*.spec.d.ts.map
 
 # Development
 .git/

@@ -1,12 +1,17 @@
 {
     "name": "vmetrics-js",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "High-performance TypeScript client for VictoriaMetrics with automatic batching and buffering",
     "type": "module",
     "main": "dist/src/index.js",
     "types": "dist/src/index.d.ts",
     "files": [
-        "/dist"
+        "/dist",
+        "!/dist/example",
+        "!/dist/**/*.spec.js",
+        "!/dist/**/*.spec.d.ts",
+        "!/dist/**/*.spec.js.map",
+        "!/dist/**/*.spec.d.ts.map"
     ],
     "repository": {
         "type": "git",

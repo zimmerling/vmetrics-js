@@ -239,3 +239,4 @@ export class VictoriaMetricsClient {
         await this.flush()
     }
 }
+
